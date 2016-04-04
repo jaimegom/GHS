@@ -1,0 +1,6 @@
+[01-Mar-2016 21:38:08 America/Tegucigalpa] PHP Fatal error:  Function name must be a string in /home/fmartinez16/public_html/pruebacaptura/MODEL/ReporteMensual02.php on line 26
+[23-Mar-2016 08:46:10 America/Tegucigalpa] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (2016-- :) at position 4 (-): Unexpected character' in /home/fmartinez16/public_html/pruebacaptura/MODEL/ValidarTramasExpiracion.php:64
+Stack trace:
+#0 /home/fmartinez16/public_html/pruebacaptura/MODEL/ValidarTramasExpiracion.php(64): DateTime->__construct('2016-- :')
+#1 {main}
+  thrown in /home/fmartinez16/public_html/pruebacaptura/MODEL/ValidarTramasExpiracion.php on line 64
