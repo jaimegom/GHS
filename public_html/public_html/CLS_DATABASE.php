@@ -1,21 +1,20 @@
 <?php   
  
+class configDB{
+    function __construct(){
 
+    }
 
-function AbrirConexion() {
-$enlace =  mysql_connect('localhost', 'fmartinez', 'holamundo2016');
-if (!$enlace) {
-    die('No pudo conectarse: ' . mysql_error());
+    function Conectar(){
+
+        $conn = new mysqli('localhost', 'root', '','DB_Desarrollo');
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }else {
+            return $conn;
+        }
+    }
 }
-   
- $bd_seleccionada = mysql_select_db('DB_Desarrollo', $enlace); 
- 
-if (!$bd_seleccionada)
-{
-    die ('No se puede usar base de datos: ' . mysql_error());
-}
 
-
-}
 
 ?>

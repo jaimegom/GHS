@@ -1,5 +1,5 @@
-<? 
-
+<?php
+/*
 require_once "CLS_DATABASE.php"; 
 AbrirConexion();
 
@@ -54,7 +54,6 @@ echo "</option>";
  
 }
 
-?>
 
 
 </select>
@@ -71,3 +70,4 @@ ID Cliente : <input type="text" name="lname" disabled><br><br>
 <body>
 
 </body>
+*/?>
