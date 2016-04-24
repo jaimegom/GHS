@@ -1,3 +1,15 @@
+<?php
+$err = isset($_GET['error']) ? $_GET['error'] : null ;
+session_start();
+if (isset($_COOKIE['username']) && isset($_COOKIE['password']) ||  isset($_SESSION['username'])) {
+    if (!isset($_SESSION['username'])) {
+        session_start();
+        $_SESSION['username'] = $_COOKIE['username'];
+        //se va a agregar.php porque aun no hay un menu
+    }
+    header('Location:Agregar.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,41 +85,24 @@
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-password">Password</label>
-                                        Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
+
 			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-			                        </div>
-                                    <!-- <button action="loginController.php?modo=login" type="submit" class="btn">Sign in!</button>  -->
-
+                                        Recordad usuario y contraseña: <input type="checkbox" name="rememberme" value="1"><br>
+			                         </div>
+                                    <?php
+                                    if($err==1){
+                                        echo "Usuario o Contraseña Erróneos <br />";
+                                    }
+                                    if($err==2){
+                                        echo "Debe iniciar sesion para poder acceder el sitio. <br />";
+                                    }
+                                    ?>
                                     <button  type="submit" class="btn">Sign in!</button>
-                                    <script >
-                                        function alerta(){
-
-                                            alert("hola");
-                                        }
-                                        </script>
-                                         </form>
+                                          </form>
                                      </div>
                                  </div>
                              </div>
 
-                             <!--
-                             <div class="row">
-                                 <div class="col-sm-6 col-sm-offset-3 social-login">
-                                     <h3>...or login with:</h3>
-                                     <div class="social-login-buttons">
-                                         <a class="btn btn-link-1 btn-link-1-facebook" href="#">
-                                             <i class="fa fa-facebook"></i> Facebook
-                                         </a>
-                                         <a class="btn btn-link-1 btn-link-1-twitter" href="#">
-                                             <i class="fa fa-twitter"></i> Twitter
-                                         </a>
-                                         <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
-                                             <i class="fa fa-google-plus"></i> Google Plus
-                                         </a>
-                                     </div>
-                                 </div>
-                             </div>
-         -->
 
                 </div>
             </div>

@@ -34,7 +34,7 @@ $fila = mysql_fetch_array($ValidaPrueba);
  if($fila[id_usuario] == 0 )
  {
 
- header("Location: home.html");
+ header("Location: home.php");
 
  }
 

@@ -4,12 +4,14 @@
 
 require_once "LoginModelo.php";
 
-if (isset($_COOKIE['username']) && isset($_COOKIE['password'])){
-    if(!isset($_SESSIONS)){
+if (isset($_COOKIE['username']) && isset($_COOKIE['password']) ||  isset($_SESSION['username'])){
+    if(!isset($_SESSIONS['username'])){
         session_start();
         $_SESSION['username']  = $_COOKIE['username'];
     }
-echo "pase usted ".$_COOKIE['username'];
+    //echo "pase usted ".$_COOKIE['username'];
+    //deberia de redirigir al menu principal, pero por lo pronto se va a agregar
+    header('Location: Agregar.php');
 }else{
     $loginModelo = new LoginModelo();
     $usuarioValido = $loginModelo->usuarioValido($_POST['form-username'], $_POST['form-password']);
@@ -20,12 +22,14 @@ echo "pase usted ".$_COOKIE['username'];
         }
         session_start();
         $_SESSION['username']  = $_POST['form-username'];
-        echo "pase usted sin cookies ".$_POST['form-username'];
-
+        //$_SESSION['username']  = $_POST['form-username'];
+       // echo "pase usted sin cookies ".$_POST['form-username'];
+       //deberia de redirigir al menu principal, pero por lo pronto se va a agregar
+        header('Location: Agregar.php');
     }
     else{
-        echo "contraseña incorrecta";
-        //header('Location: login.html');
+       // echo "contraseña incorrecta";
+        header('Location: home.php?error=1');
     }
 }
 
