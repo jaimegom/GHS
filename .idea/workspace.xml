@@ -2,13 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd7cc20d-8de6-411b-9e99-fd23d0e22825" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/public_html/Agregar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/public_html/borrarCookies.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/public_html/confirmarSession.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/public_html/init.php" />
-      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\home.html" afterPath="$PROJECT_DIR$/public_html/public_html/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/public_html/Valida_usr.php" afterPath="$PROJECT_DIR$/public_html/public_html/Valida_usr.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/public_html/loginController.php" afterPath="$PROJECT_DIR$/public_html/public_html/loginController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteControlador.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteModelo.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\404.shtml" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/404.shtml" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\Agregar.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/Clientes.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\CLS_DATABASE.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/CLS_DATABASE.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\LoginModelo.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\Valida_usr.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\css\bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\css\bootstrap.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\css\bootstrap.css.map" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\js\bootstrap.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/js/bootstrap.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\bootstrap\js\npm.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/js/npm.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\css\form-elements.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/css/form-elements.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\css\style.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/css/style.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\css\font-awesome.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/css/font-awesome.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\css\font-awesome.min.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/css/font-awesome.min.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\fonts\FontAwesome.otf" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/fonts/FontAwesome.otf" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\fonts\fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\fonts\fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\fonts\fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\fonts\fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\animated.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/animated.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\bordered-pulled.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/bordered-pulled.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\core.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/core.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\fixed-width.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/fixed-width.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\font-awesome.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/font-awesome.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\icons.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/icons.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\larger.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/larger.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\list.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/list.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\mixins.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/mixins.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\path.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/path.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\rotated-flipped.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/rotated-flipped.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\stacked.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/stacked.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\less\variables.less" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/less/variables.less" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_animated.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_animated.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_bordered-pulled.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_bordered-pulled.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_core.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_core.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_fixed-width.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_fixed-width.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_icons.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_icons.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_larger.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_larger.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_list.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_list.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_mixins.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_mixins.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_path.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_path.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_rotated-flipped.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_rotated-flipped.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_stacked.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_stacked.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\_variables.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/_variables.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\font-awesome\scss\font-awesome.scss" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/font-awesome/scss/font-awesome.scss" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\ico\apple-touch-icon-114-precomposed.png" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/ico/apple-touch-icon-114-precomposed.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\ico\apple-touch-icon-144-precomposed.png" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/ico/apple-touch-icon-144-precomposed.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\ico\apple-touch-icon-57-precomposed.png" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/ico/apple-touch-icon-57-precomposed.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\ico\apple-touch-icon-72-precomposed.png" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/ico/apple-touch-icon-72-precomposed.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\ico\favicon.png" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/ico/favicon.png" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\img\backgrounds\1.jpg" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/img/backgrounds/1.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\img\backgrounds\1@2x.jpg" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/img/backgrounds/1@2x.jpg" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\js\jquery-1.11.1.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/jquery-1.11.1.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\js\jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/jquery-1.11.1.min.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\js\jquery.backstretch.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/jquery.backstretch.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\js\jquery.backstretch.min.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/jquery.backstretch.min.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\js\placeholder.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/placeholder.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\assets\js\scripts.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/scripts.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\borrarCookies.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/borrarCookies.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\confirmarSession.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/confirmarSession.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\init.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/init.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\jquery-2.1.4.js" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/jquery-2.1.4.js" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\layout-styles.css" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/layout-styles.css" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\loginController.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/loginController.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\objetoPHP.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/objetoPHP.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\pagina_usuario.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\pruebaHome.html" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaHome.html" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\GHS\public_html\public_html\pruebaPHP.php" afterPath="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaPHP.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_html/public_html/home.php" afterPath="$PROJECT_DIR$/public_html/public_html/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GHS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,109 +105,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Valida_usr.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
+      <file leaf-file-name="Clientes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/Clientes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.653846">
+              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pruebaPHP.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/pruebaPHP.php">
+      <file leaf-file-name="ClienteModelo.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteModelo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="1" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="objetoPHP.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/objetoPHP.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.1557971">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
-                <marker date="1460516427238" expanded="true" signature="412:501" placeholder="SELECT nombr..usuarios_header..." />
+                <marker date="1461729132892" expanded="true" signature="2845:2855" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClienteControlador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteControlador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding>
+                <marker date="1461719938511" expanded="true" signature="192:213" placeholder="SELECT * FRO..cliente..." />
+                <marker date="1461719938511" expanded="true" signature="477:498" placeholder="SELECT * FRO..cliente..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="loginController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/loginController.php">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/loginController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state vertical-scroll-proportion="-9.807693">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="borrarCookies.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/borrarCookies.php">
+      <file leaf-file-name="LoginModelo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
+                <element signature="e#1016#1162#0#PHP" expanded="false" />
+                <marker date="1460521815980" expanded="true" signature="414:503" placeholder="SELECT nombr..usuarios_header..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Agregar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/Agregar.php">
+      <file leaf-file-name="ClientesPasado.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/ClientesPasado.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.490909">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="init.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/init.php">
+        <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/init.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CLS_DATABASE.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/CLS_DATABASE.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/public_html/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47766322">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="confirmarSession.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/public_html/confirmarSession.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -172,8 +229,17 @@
         <option value="$PROJECT_DIR$/public_html/public_html/borrarCookies.php" />
         <option value="$PROJECT_DIR$/public_html/public_html/loginController.php" />
         <option value="$PROJECT_DIR$/public_html/public_html/init.php" />
-        <option value="$PROJECT_DIR$/public_html/public_html/home.php" />
         <option value="$PROJECT_DIR$/public_html/public_html/confirmarSession.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/borrarCookies.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/loginController.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/Agregar.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/init.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/home.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteController.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/Clientes.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteControlador.php" />
+        <option value="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteModelo.php" />
       </list>
     </option>
   </component>
@@ -307,7 +373,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="Desarrollo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,11 +399,105 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="Desarrollo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="Admon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pruebas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GHS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GHS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Desarrollo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GHS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GHS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Desarrollo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Clientes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GHS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GHS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Desarrollo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,17 +516,32 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Agregar.php">
-    <configuration default="false" name="pruebaHome.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/pruebaHome.html">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GHS\public_html\public_html\Desarrollo\Admon\Clientes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GHS\public_html\public_html\Desarrollo\Admon\Pruebas" />
+      <recent name="C:\xampp\htdocs\GHS\public_html\public_html\Desarrollo\Admon\Clientes" />
+      <recent name="C:\xampp\htdocs\GHS\public_html\public_html\Desarrollo\Admon" />
+      <recent name="C:\xampp\htdocs\GHS\public_html\public_html\Desarrollo\Admon\Login" />
+      <recent name="C:\xampp\htdocs\GHS\public_html\public_html\Desarrollo\Admon\Clientes\Pruebas" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.borrarCookies.php">
+    <configuration default="false" name="pruebaHome.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/Desarrollo/Admon/Clientes/Pruebas/pruebaHome.html">
       <method />
     </configuration>
-    <configuration default="false" name="LoginModelo.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/LoginModelo.php">
+    <configuration default="false" name="LoginModelo.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php">
       <method />
     </configuration>
-    <configuration default="false" name="Valida_usr.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
+    <configuration default="false" name="Valida_usr.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php">
       <method />
     </configuration>
-    <configuration default="false" name="Agregar.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/Agregar.php">
+    <configuration default="false" name="Clientes.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/Desarrollo/Admon/Clientes/Clientes.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="borrarCookies.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/Desarrollo/Admon/Pruebas/borrarCookies.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -391,30 +570,32 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="pruebaPHP.php" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/pruebaPHP.php">
+    <configuration default="false" name="pruebaPHP.php" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/Desarrollo/Admon/Clientes/Pruebas/pruebaPHP.php">
       <method />
     </configuration>
     <configuration default="false" name="home.php" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:8080/GHS/public_html/public_html/home.php">
       <method />
     </configuration>
-    <configuration default="false" name="ghs" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/public_html/public_html/loginController.php">
+    <configuration default="false" name="ghs" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/loginController.php">
       <method />
     </configuration>
-    <list size="7">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.pruebaPHP.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.home.php" />
       <item index="2" class="java.lang.String" itemvalue="PHP Script.ghs" />
       <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.pruebaHome.html" />
       <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.LoginModelo.php" />
       <item index="5" class="java.lang.String" itemvalue="PHP Script.Valida_usr.php" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.Agregar.php" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.Clientes.php" />
+      <item index="7" class="java.lang.String" itemvalue="JavaScript Debug.borrarCookies.php" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Agregar.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.LoginModelo.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.Valida_usr.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.pruebaHome.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.borrarCookies.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Clientes.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.LoginModelo.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.Valida_usr.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.pruebaHome.html" />
       </list>
     </recent_temporary>
   </component>
@@ -432,15 +613,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29136163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.13396779" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33070865" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18582678" sideWeight="0.8660322" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -470,71 +651,71 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php</url>
           <line>10</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php</url>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php</url>
           <line>3</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php</url>
           <line>1</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php</url>
           <line>4</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php</url>
           <line>13</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php</url>
           <line>10</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php</url>
           <line>4</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/pruebaPHP.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaPHP.php</url>
           <line>3</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/pruebaPHP.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaPHP.php</url>
           <line>10</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/pruebaPHP.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaPHP.php</url>
           <line>11</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/objetoPHP.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/objetoPHP.php</url>
           <line>25</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/objetoPHP.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/objetoPHP.php</url>
           <line>2</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/public_html/public_html/init.php</url>
+          <url>file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/init.php</url>
           <line>14</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
@@ -555,63 +736,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="59" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/CLS_DATABASE.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/MODEL/CLS_DATABASE.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pruebaHome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/loginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <marker date="1460521815980" expanded="true" signature="-1:-1" placeholder="SELECT nombr..usuarios_header..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/public_html/home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -620,14 +744,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/layout-styles.css">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/layout-styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="33" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="59" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
@@ -635,7 +760,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/CLS_DATABASE.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/CLS_DATABASE.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
@@ -643,11 +768,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1461443948431" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios_header..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -658,7 +785,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pruebaHome.html">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaHome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
@@ -666,7 +793,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/loginController.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/loginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
@@ -674,12 +801,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding>
-            <marker date="1460521815980" expanded="true" signature="-1:-1" placeholder="SELECT nombr..usuarios_header..." />
+            <element signature="e#1016#1162#0#PHP" expanded="false" />
+            <marker date="1460521815980" expanded="true" signature="414:503" placeholder="SELECT nombr..usuarios_header..." />
           </folding>
         </state>
       </provider>
@@ -692,14 +820,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/layout-styles.css">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/layout-styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="33" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -707,7 +836,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/CLS_DATABASE.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/CLS_DATABASE.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
@@ -715,15 +844,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1461443948431" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios_header..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/CLS_DATABASE.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/CLS_DATABASE.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -739,7 +870,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="1" selection-start-line="35" selection-start-column="0" selection-end-line="54" selection-end-column="1" />
@@ -747,11 +878,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1461443948431" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios_header..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,7 +896,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
@@ -786,10 +919,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/layout-styles.css">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/layout-styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="33" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -821,7 +955,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pruebaHome.html">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaHome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
@@ -829,7 +963,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/assets/css/form-elements.css">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/css/form-elements.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
@@ -853,7 +987,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pagina_usuario.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pagina_usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9414802">
           <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
@@ -861,43 +995,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/LoginModelo.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/CLS_DATABASE.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.73077">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <marker date="1460521815980" expanded="true" signature="-1:-1" placeholder="SELECT nombr..usuarios_header..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.35111877">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Valida_usr.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/Valida_usr.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/objetoPHP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1460516427238" expanded="true" signature="412:501" placeholder="SELECT nombr..usuarios_header..." />
+            <marker date="1461443948431" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios_header..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/pruebaPHP.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/pruebaPHP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="1" selection-end-column="29" />
@@ -905,65 +1021,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/CLS_DATABASE.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/objetoPHP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.029259896">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+          <folding>
+            <marker date="1460516427238" expanded="true" signature="-1:-1" placeholder="SELECT nombr..usuarios_header..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19604613">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/borrarCookies.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/404.shtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5817556">
+          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/Agregar.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/img/backgrounds/1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/confirmarSession.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.490909">
-          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.20481928">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/loginController.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/borrarCookies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23407917">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/init.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Pruebas/ClientesPasado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2413793">
+          <caret line="1578" column="10" selection-start-line="1578" selection-start-column="1" selection-end-line="1578" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/public_html/confirmarSession.php">
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state vertical-scroll-proportion="-1.8214285">
+          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/public_html/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47766322">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/loginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Login/LoginModelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#1016#1162#0#PHP" expanded="false" />
+            <marker date="1460521815980" expanded="true" signature="414:503" placeholder="SELECT nombr..usuarios_header..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteControlador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <marker date="1461719938511" expanded="true" signature="192:213" placeholder="SELECT * FRO..cliente..." />
+            <marker date="1461719938511" expanded="true" signature="477:498" placeholder="SELECT * FRO..cliente..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/Clientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.653846">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/public_html/Desarrollo/Admon/Clientes/ClienteModelo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1557971">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <marker date="1461729132892" expanded="true" signature="2845:2855" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

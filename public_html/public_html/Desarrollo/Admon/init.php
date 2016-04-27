@@ -9,12 +9,12 @@ if ((isset($_COOKIE['username']) && isset($_COOKIE['password'])) ||  isset($_SES
         $_SESSION['username']  = $_COOKIE['username'];
     }
     //no redirigimos a ningun sitio, solo dejamos que deje pasar al sitio soliticado
-    //header('Location: Agregar.php');
+    //header('Location: Clientes.php');
     //header('Location: confirmarSession.php');
 
 }else{
     session_start();
-    header('Location: Home.php?error=2');
+    header('Location: ../../../home.php?error=2');
 }
 
 

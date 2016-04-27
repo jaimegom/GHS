@@ -8,5 +8,7 @@
 
 setcookie("Francisco","", time() - (86400 * 30), "/");
 setcookie("coco","", time() - (86400 * 30), "/");
+session_start();
+session_destroy();
 echo "cookies borradas";
 ?>

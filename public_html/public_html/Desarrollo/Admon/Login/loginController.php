@@ -11,7 +11,7 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['password']) ||  isset($_SESSI
     }
     //echo "pase usted ".$_COOKIE['username'];
     //deberia de redirigir al menu principal, pero por lo pronto se va a agregar
-    header('Location: Agregar.php');
+    header('Location: ../Clientes/Clientes.php');
 }else{
     $loginModelo = new LoginModelo();
     $usuarioValido = $loginModelo->usuarioValido($_POST['form-username'], $_POST['form-password']);
@@ -25,11 +25,11 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['password']) ||  isset($_SESSI
         //$_SESSION['username']  = $_POST['form-username'];
        // echo "pase usted sin cookies ".$_POST['form-username'];
        //deberia de redirigir al menu principal, pero por lo pronto se va a agregar
-        header('Location: Agregar.php');
+        header('Location: ../Clientes/Clientes.php');
     }
     else{
        // echo "contraseña incorrecta";
-        header('Location: home.php?error=1');
+        header('Location: ../../../home.php?error=1');
     }
 }
 
