@@ -44,7 +44,7 @@ include_once 'ClienteControlador.php';
 <div class="clearfix"></div>
 
 <div class="form-top-left" >
-    <a href="add-data.php" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Add Records</a>
+    <a href="ClienteAgregar.php" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Add Records</a>
 </div>
 
 <div class="clearfix"></div><br />

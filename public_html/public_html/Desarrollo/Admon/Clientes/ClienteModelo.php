@@ -31,10 +31,10 @@ class ClienteModelo
                     <td><?php print($row['direccion']); ?></td>
 
                     <td align="center">
-                        <a href="edit-data.php?edit_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-edit"></i></a>
+                        <a href="clienteModificar.php?edit_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-edit"></i></a>
                     </td>
                     <td align="center">
-                        <a href="delete.php?delete_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                        <a href="clienteEliminar.php?delete_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-remove-circle"></i></a>
                     </td>
                 </tr>
                 <?php
@@ -107,6 +107,85 @@ class ClienteModelo
                 echo "<li><a href='".$self."?page_no=".$total_no_of_pages."'>Last</a></li>";
             }
             ?></ul><?php
+        }
+    }
+
+    public function agregarClienteModelo($nombreCliente, $correoElectronico, $telefono, $direccion,$fecha){
+        if ($stmt = $this->conn->prepare("insert into cliente(nombre_cliente,correo_electronico,telefono,direccion,fecha_creacion) VALUES(?,?,?,?,?)")) {
+
+            /* ligar par?metros para marcadores */
+            if(!$stmt->bind_param("sssss",$nombreCliente, $correoElectronico, $telefono, $direccion,$fecha)){
+                return false;
+            }
+
+
+            /* ejecutar la consulta */
+            if($stmt->execute()){
+                return true;
+            }else{
+                return false;
+            }
+
+
+            /* cerrar sentencia */
+            $stmt->close();
+        }else{
+            return false;
+        }
+
+
+
+
+    }
+
+    public function modificarClienteModelo($nombreCliente, $correoElectronico, $telefono, $direccion,$id_cliente){
+        if ($stmt = $this->conn->prepare("update cliente set nombre_cliente =?,correo_electronico= ?, telefono=?,direccion=? where id_cliente=?")) {
+
+            /* ligar par?metros para marcadores */
+            if(!$stmt->bind_param("ssssi",$nombreCliente, $correoElectronico, $telefono, $direccion,$id_cliente)){
+                return false;
+            }
+
+
+            /* ejecutar la consulta */
+            if($stmt->execute()){
+                return true;
+            }else{
+                return false;
+            }
+
+
+            /* cerrar sentencia */
+            $stmt->close();
+        }else{
+            return false;
+        }
+    }
+
+    public function getByIDCliente($id_cliente){
+        if ($stmt = $this->conn->prepare("select nombre_cliente,correo_electronico,telefono,direccion  from cliente where id_cliente = ?")) {
+
+            /* ligar par?metros para marcadores */
+            if(!$stmt->bind_param("i",$id_cliente)){
+                return false;
+            }
+
+
+            /* ejecutar la consulta */
+            if(!$stmt->execute()){
+                return false;
+            }
+
+            $result = $stmt->get_result();
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+
+            //$stmt->bind_result( $nombre_cliente, $correo_electronico, $telefono, $direccion);
+            //$result = $stmt->fetch();
+            /* cerrar sentencia */
+            $stmt->close();
+            return $row;
+        }else{
+            return false;
         }
     }
 }
