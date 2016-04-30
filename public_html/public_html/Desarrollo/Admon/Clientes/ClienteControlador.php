@@ -65,4 +65,16 @@ function getByIDCliente($id_cliente){
 
 }
 
+function deleteClienteByID($id_cliente){
+    $clienteModelo = new ClienteModelo();
+    //validaciones
+
+    if($clienteModelo->deleteClienteByID($id_cliente)){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
 ?>

@@ -6,32 +6,18 @@ if(isset($_POST['btn-update']))
     $id_cliente = $_GET['edit_id'];
     $nombreCliente = $_POST['nombreCliente'];
     $correoElectronico = $_POST['correoElectronico'];
-    $Telefono = $_POST['Telefono'];
-    $Direccion = $_POST['Direccion'];
+    $telefono = $_POST['Telefono'];
+    $direccion = $_POST['Direccion'];
 
     if(modificarCliente($nombreCliente, $correoElectronico, $telefono, $direccion,$id_cliente)){
         $msg = "<div class='alert alert-info'>
-				<strong>WOW!</strong> Record was updated successfully <a href='index.php'>HOME</a>!
+				Cliente fue modificado exitosamente <a href='Clientes.php'>Regresar al Menu</a>!
 				</div>";
     }else{
         $msg = "<div class='alert alert-warning'>
 				<strong>SORRY!</strong> ERROR while updating record !
 				</div>";
     }
-    /*
-    if($crud->update($id,$fname,$lname,$email,$contact))
-    {
-        $msg = "<div class='alert alert-info'>
-				<strong>WOW!</strong> Record was updated successfully <a href='index.php'>HOME</a>!
-				</div>";
-    }
-    else
-    {
-        $msg = "<div class='alert alert-warning'>
-				<strong>SORRY!</strong> ERROR while updating record !
-				</div>";
-    }
-    */
 }
 
 if(isset($_GET['edit_id']))
@@ -124,9 +110,9 @@ if(isset($_GET['edit_id']))
             <tr>
                 <td colspan="2">
                     <button type="submit" class="btn btn-primary" name="btn-update">
-                        <span class="glyphicon glyphicon-edit"></span>  Update this Record
+                        <span class="glyphicon glyphicon-edit"></span>  Modificar Cliente
                     </button>
-                    <a href="index.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; CANCEL</a>
+                    <a href="Clientes.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Regresar al Menu</a>
                 </td>
             </tr>
 

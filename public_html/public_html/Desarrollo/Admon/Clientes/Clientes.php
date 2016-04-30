@@ -44,7 +44,7 @@ include_once 'ClienteControlador.php';
 <div class="clearfix"></div>
 
 <div class="form-top-left" >
-    <a href="ClienteAgregar.php" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Add Records</a>
+    <a href="ClienteAgregar.php" class="btn btn-large btn-info"><i class="glyphicon glyphicon-plus"></i> &nbsp; Agregar Cliente</a>
 </div>
 
 <div class="clearfix"></div><br />
@@ -52,12 +52,12 @@ include_once 'ClienteControlador.php';
 <div class="container">
     <table class='table table-bordered table-responsive'>
         <tr>
-            <th>#</th>
+            <th>ID</th>
             <th>Nombre Cliente</th>
             <th>Correo electronico</th>
             <th>Telefono</th>
             <th>Direccion</th>
-            <th colspan="2" align="center">Actions</th>
+            <th colspan="2" align="center">Acciones</th>
         </tr>
         <?php
         llenarTabla();

@@ -31,10 +31,10 @@ class ClienteModelo
                     <td><?php print($row['direccion']); ?></td>
 
                     <td align="center">
-                        <a href="clienteModificar.php?edit_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-edit"></i></a>
+                        <a href="ClienteModificar.php?edit_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-edit"></i></a>
                     </td>
                     <td align="center">
-                        <a href="clienteEliminar.php?delete_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                        <a href="ClienteEliminar.php?delete_id=<?php print($row['id_cliente']); ?>"><i class="glyphicon glyphicon-remove-circle"></i></a>
                     </td>
                 </tr>
                 <?php
@@ -87,7 +87,7 @@ class ClienteModelo
             {
                 $previous =$current_page-1;
                 echo "<li><a href='".$self."?page_no=1'>First</a></li>";
-                echo "<li><a href='".$self."?page_no=".$previous."'>Previous</a></li>";
+                echo "<li><a href='".$self."?page_no=".$previous."'>Anterior</a></li>";
             }
             for($i=1;$i<=$total_no_of_pages;$i++)
             {
@@ -103,8 +103,8 @@ class ClienteModelo
             if($current_page!=$total_no_of_pages)
             {
                 $next=$current_page+1;
-                echo "<li><a href='".$self."?page_no=".$next."'>Next</a></li>";
-                echo "<li><a href='".$self."?page_no=".$total_no_of_pages."'>Last</a></li>";
+                echo "<li><a href='".$self."?page_no=".$next."'>Siguiente</a></li>";
+                echo "<li><a href='".$self."?page_no=".$total_no_of_pages."'>Ultima</a></li>";
             }
             ?></ul><?php
         }
@@ -163,13 +163,12 @@ class ClienteModelo
     }
 
     public function getByIDCliente($id_cliente){
-        if ($stmt = $this->conn->prepare("select nombre_cliente,correo_electronico,telefono,direccion  from cliente where id_cliente = ?")) {
+        if ($stmt = $this->conn->prepare("select id_cliente,nombre_cliente,correo_electronico,telefono,direccion  from cliente where id_cliente = ?")) {
 
             /* ligar par?metros para marcadores */
             if(!$stmt->bind_param("i",$id_cliente)){
                 return false;
             }
-
 
             /* ejecutar la consulta */
             if(!$stmt->execute()){
@@ -179,11 +178,33 @@ class ClienteModelo
             $result = $stmt->get_result();
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
-            //$stmt->bind_result( $nombre_cliente, $correo_electronico, $telefono, $direccion);
-            //$result = $stmt->fetch();
             /* cerrar sentencia */
             $stmt->close();
             return $row;
+        }else{
+            return false;
+        }
+    }
+
+    public function deleteClienteByID($id_cliente){
+        if ($stmt = $this->conn->prepare("delete from cliente where id_cliente=?")) {
+
+            /* ligar par?metros para marcadores */
+            if(!$stmt->bind_param("i",$id_cliente)){
+                return false;
+            }
+
+
+            /* ejecutar la consulta */
+            if($stmt->execute()){
+                return true;
+            }else{
+                return false;
+            }
+
+
+            /* cerrar sentencia */
+            $stmt->close();
         }else{
             return false;
         }

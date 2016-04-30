@@ -77,9 +77,9 @@ include_once 'ClienteControlador.php';
             <tr>
                 <td colspan="2">
                     <button type="submit" class="btn btn-primary" name="btn-save">
-                        <span class="glyphicon glyphicon-plus"></span> Create New Record
+                        <span class="glyphicon glyphicon-plus"></span> Crear Cliente
                     </button>
-                    <a href="index.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Back to index</a>
+                    <a href="Clientes.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Regresar al Menu</a>
                 </td>
             </tr>
 
@@ -137,7 +137,7 @@ if(isset($_GET['inserted']))
     ?>
     <div class="container">
         <div class="alert alert-info">
-            <strong>WOW!</strong> Record was inserted successfully <a href="ClienteAgregar.php">HOME</a>!
+            <strong>WOW!</strong> Cliente fue guardado exitosamente <a href="ClienteAgregar.php">Regresar al Menu</a>
         </div>
     </div>
     <?php
@@ -147,7 +147,7 @@ else if(isset($_GET['failure']))
     ?>
     <div class="container">
         <div class="alert alert-warning">
-            <strong>SORRY!</strong> ERROR while inserting record !
+            <strong>SORRY!</strong> ERROR mientras se insertaba!
         </div>
     </div>
     <?php
