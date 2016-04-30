@@ -7,7 +7,10 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['password']) ||  isset($_SESSI
         $_SESSION['username'] = $_COOKIE['username'];
         //se va a agregar.php porque aun no hay un menu
     }
-    header('Location:Desarrollo/Admon/Clientes/Clientes.php');
+    //header('Location:Desarrollo/Admon/Clientes/Clientes.php');
+
+
+    header('Location:Desarrollo/Admon/Clientes/Plaza.php');
 }
 ?>
 <!DOCTYPE html>
