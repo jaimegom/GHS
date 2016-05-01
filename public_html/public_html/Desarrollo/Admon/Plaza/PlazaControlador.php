@@ -26,13 +26,13 @@ function paginglink(){
     $PlazaModelo->paginglink($query,$records_per_page);
 }
 
-function agregarPlaza($nombrePlaza, $correoElectronico, $telefono, $direccion){
+function agregarPlaza($nombrePlaza, $direccion, $cliente){
     //verificar que el nombre no se repita
     //sacar la fecha
 
     $PlazaModelo = new PlazaModelo();
 
-    if($PlazaModelo->agregarPlazaModelo($nombrePlaza, $correoElectronico, $telefono, $direccion,date("d,m,y H:i"))){
+    if($PlazaModelo->agregarPlazaModelo($nombrePlaza, $direccion, $cliente,date("d,m,y H:i"))){
         return true;
     }else{
         return false;
@@ -64,5 +64,23 @@ function getByIDPlaza($id_Plaza,$id_cliente){
     }
 
 }
+
+
+
+
+function deletePlazaByID($id_plaza,$id_cliente){
+    $PlazaModelo = new PlazaModelo();
+    //validaciones
+
+    if($PlazaModelo->deletePlazaByID($id_plaza,$id_cliente)){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+
+
 
 ?>

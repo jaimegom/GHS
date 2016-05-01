@@ -28,12 +28,11 @@ class PlazaModelo
                     <td><?php print($row['nombre_plaza']); ?></td>
                     <td><?php print($row['direccion_plaza']); ?></td>
                     <td><?php print($row['nombre_cliente']); ?></td>
-                    <td><?php print($row['id_cliente']); ?></td>
                     <td align="center">
                         <a href="PlazaModificar.php?edit_id=<?php print($row['id_plaza']); ?>&edit_id2=<?php print($row['id_cliente']); ?>  "><i class="glyphicon glyphicon-edit"></i></a>
                     </td>
                     <td align="center">
-                        <a href="PlazaEliminar.php?delete_id=<?php print($row['id_plaza']); ?>"><i class="glyphicon glyphicon-remove-circle"></i></a>
+                        <a href="PlazaEliminar.php?delete_id=<?php print($row['id_plaza']); ?>&edit_id2=<?php print($row['id_cliente']); ?>  "><i class="glyphicon glyphicon-remove-circle"></i></a>
                     </td>
                 </tr>
                 <?php
@@ -109,11 +108,11 @@ class PlazaModelo
         }
     }
 
-    public function agregarPlazaModelo($nombrePlaza , $direccion,$fecha){
-        if ($stmt = $this->conn->prepare("insert into Plaza(nombre_Plaza,direccion_plaza,fecha_creacion) VALUES(?,?,?,?,?)")) {
+    public function agregarPlazaModelo($nombrePlaza , $direccion,$cliente,$fecha){
+        if ($stmt = $this->conn->prepare("insert into Plaza(nombre_Plaza,direccion_plaza,id_cliente,fecha_creacion) VALUES(?,?,?,?)")) {
 
             /* ligar par?metros para marcadores */
-            if(!$stmt->bind_param("sssss",$nombrePlaza , $direccion,$fecha)){
+            if(!$stmt->bind_param("ssis",$nombrePlaza , $direccion,$cliente,$fecha)){
                 return false;
             }
 
@@ -138,27 +137,30 @@ class PlazaModelo
     }
 
     public function modificarPlazaModelo($nombrePlaza,$direccion,$id_Plaza,$id_cliente){
-        if ($stmt = $this->conn->prepare("update Plaza set nombre_plaza =? direccion_plaza=? where id_Plaza=? and id_cliente =?")) {
+    
 
-            /* ligar par?metros para marcadores */
-            if(!$stmt->bind_param("ssii",$nombrePlaza , $direccion,$id_Plaza,$id_cliente)){
+            if ($stmt = $this->conn->prepare("update Plaza set nombre_plaza =? ,direccion_plaza=? where id_plaza=? and id_cliente =?")) {
+
+
+           
+            if(!$stmt->bind_param("ssii",$nombrePlaza,$direccion,$id_Plaza,$id_cliente)){
                 return false;
             }
 
 
-            /* ejecutar la consulta */
+            
             if($stmt->execute()){
                 return true;
             }else{
                 return false;
             }
-
-
-            /* cerrar sentencia */
+           
             $stmt->close();
         }else{
             return false;
         }
+
+        
     }
 
 
@@ -166,7 +168,7 @@ class PlazaModelo
     public function getByIDPlaza($id_plaza,$id_cliente){
         if ($stmt = $this->conn->prepare("Select p.id_plaza,nombre_plaza,direccion_plaza,c.nombre_cliente   as Cliente , c.id_cliente as id_cliente from plaza p left JOIN cliente c on p.id_cliente = c.id_cliente where p.id_plaza = ? and c.id_cliente = ? ")) {
 
-//
+
             /* ligar par?metros para marcadores */
             if(!$stmt->bind_param("ii",$id_plaza,$id_cliente)){
                 return false;
@@ -192,6 +194,37 @@ class PlazaModelo
             return false;
         }
     }
+
+
+public function deletePlazaByID($id_plaza,$id_cliente){
+       
+
+       if ($stmt = $this->conn->prepare("delete from Plaza where id_plaza=? and id_cliente = ?")) {
+
+             if(!$stmt->bind_param("ii",$id_plaza,$id_cliente)){
+                return false;
+            }
+
+
+             if($stmt->execute()){
+                return true;
+            }else{
+                return false;
+            }
+
+
+             $stmt->close();
+        }else{
+            return false;
+        } 
+
+        
+    }
+
+
+
+
+
 }
 
 ?>

@@ -56,8 +56,7 @@ include_once 'PlazaControlador.php';
             <th>Nombre Plaza</th>
             <th>Direccion Plaza</th>
             <th>Cliente</th>
-                        <th>id cliente</th>
-
+                       
             <th colspan="2" align="center">Actions</th>
         </tr>
         <?php

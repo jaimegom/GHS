@@ -1,44 +1,6 @@
 <?php
 require_once "../init.php";
 include_once 'PlazaControlador.php';
-
-
-if(isset($_POST['btn-update']))
-{
-    $id_Plaza = $_GET['edit_id'];
-    $id_cliente = $_GET['edit_id2'];
-    $nombrePlaza = $_POST['nombrePlaza'];
-    $direccion = $_POST['direccion'];
-    
-
-
-
-    if(modificarPlaza($nombrePlaza,$direccion,$id_Plaza,$id_cliente)){
-        $msg = "<div class='alert alert-info'>
-				<strong>WOW!</strong> Record was updated successfully <a href='Plaza.php'>HOME</a>!
-				</div>";
-    }else{
-        $msg = "<div class='alert alert-warning'>
-				<strong>SORRY!</strong> ERROR while updating record !
-				</div>";
-    }
-     
-}
-
-if(isset($_GET['edit_id']))
-{
-
- 
-    $id_Plaza = $_GET['edit_id'];
-    $id_cliente = $_GET['edit_id2'];
-    $rowPlaza = getByIDPlaza($id_Plaza,$id_cliente);
-    $nombrePlaza=$rowPlaza['nombre_plaza'];
-    $direccion = $rowPlaza['direccion_plaza'];
-    $NombreCliente = $rowPlaza['Cliente'];
-
-
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,55 +42,102 @@ if(isset($_GET['edit_id']))
 
 <div class="container">
     <?php
-    if(isset($msg))
+    if(isset($_GET['deleted']))
     {
-        echo $msg;
+        ?>
+        <div class="alert alert-success">
+            <strong>Hecho!</strong> Plaza fue eliminado...
+        </div>
+        <?php
+    }
+    else
+    {
+        ?>
+        <div class="alert alert-danger">
+            Quisiera <strong>eliminar</strong> la siguiente Plaza ?
+        </div>
+        <?php
+    }
+    ?>
+
+    <?php
+    if(isset($_POST['btn-del']))
+    {
+        $id = $_GET['delete_id'];
+        $id2 = $_GET['edit_id2'];
+
+
+       
+
+        if(deletePlazaByID($id,$id2)) 
+        {
+            header("Location: PlazaEliminar.php?deleted");
+        }else{
+            //echo "no se elimino";
+        }
+    }
+
+    ?>
+
+</div>
+
+<div class="clearfix"></div>
+
+<div class="container">
+
+    <?php
+    if(isset($_GET['delete_id']))
+    {
+        ?>
+        <table class='table table-bordered'>
+            <tr>
+                <th>ID Cliente</th>
+                <th>Nombre</th>
+                                <th>Direccion</th>
+
+                <th>Telefono</th>
+            </tr>
+            <?php
+            $row = getByIDPlaza($_GET['delete_id'],$_GET['edit_id2']);
+                ?>
+                <tr>
+                    <td><?php print($row['id_plaza']); ?></td>
+                    <td><?php print($row['nombre_plaza']); ?></td>
+                    <td><?php print($row['direccion_plaza']); ?></td>
+                    <td><?php print($row['Cliente']); ?></td>
+                        
+                </tr>
+                <?php
+
+            ?>
+        </table>
+        <?php
     }
     ?>
 </div>
 
-<div class="clearfix"></div><br />
-
 <div class="container">
-
-    <form method='post'>
-
-        <table class='table table-bordered'>
-            <tr>
-                <td>Nombre del Plaza</td>
-                <td><input type='text' name='nombrePlaza' class='form-control' value="<?php echo $nombrePlaza; ?>" required></td>
-            </tr>
-
-
-
-            <tr>
-                <td>Direccion</td>
-                <td><input type='text' name='direccion' class='form-control' value="<?php echo $direccion; ?>" required></td>
-            </tr>
-
-             <tr>
-                <td>Cliente</td>
-                <td><input type='text' name='Cliente' class='form-control' value="<?php echo $NombreCliente; ?>" required></td>
-            </tr>
-
-
-             
-
-            <tr>
-                <td colspan="2">
-                    <button type="submit" class="btn btn-primary" name="btn-update">
-                        <span class="glyphicon glyphicon-edit"></span>  Update this Record
-                    </button>
-                    <a href="index.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; CANCEL</a>
-                </td>
-            </tr>
-
-        </table>
+    <p>
+        <?php
+        if(isset($_GET['delete_id']))
+        {
+        ?>
+    <form method="post">
+        <input type="hidden" name="id" value="<?php echo $row['id_plaza']; ?>" />
+        <button class="btn btn-large btn-primary" type="submit" name="btn-del"><i class="glyphicon glyphicon-trash"></i> &nbsp; Eliminar</button>
+        <a href="Plaza.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; No</a>
     </form>
-
-
+    <?php
+    }
+    else
+    {
+        ?>
+        <a href="Plaza.php" class="btn btn-large btn-success"><i class="glyphicon glyphicon-backward"></i> &nbsp; Regresar al Menu</a>
+        <?php
+    }
+    ?>
+    </p>
 </div>
-
 
 
 <!-- Javascript -->

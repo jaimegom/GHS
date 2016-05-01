@@ -60,18 +60,15 @@ include_once 'PlazaControlador.php';
 
 
             <tr>
-                <td>Correo electronico</td>
-                <td><input type='text' name='correoElectronico' class='form-control' required></td>
-            </tr>
-
-            <tr>
-                <td>Telefono</td>
-                <td><input type='text' name='Telefono' class='form-control' required></td>
-            </tr>
-
-            <tr>
                 <td>Direccion</td>
                 <td><input type='text' name='Direccion' class='form-control' required></td>
+            </tr>
+
+           
+
+            <tr>
+                <td>Cliente</td>
+                <td><input type='text' name='Cliente' class='form-control' required></td>
             </tr>
 
             <tr>
@@ -107,9 +104,9 @@ include_once 'PlazaControlador.php';
 
 if(isset($_POST['btn-save']))
 {
-    if($_POST['nombrePlaza']&& $_POST['correoElectronico']&& $_POST['Telefono']&&$_POST['Direccion'] ){
+    if($_POST['nombrePlaza']&& $_POST['Direccion']&& $_POST['Cliente']){
 
-        if(agregarPlaza($_POST['nombrePlaza'], $_POST['correoElectronico'], $_POST['Telefono'],$_POST['Direccion'] )){
+        if(agregarPlaza($_POST['nombrePlaza'], $_POST['Direccion'], $_POST['Cliente'])){
            header("Location: PlazaAgregar.php?inserted");
        }else{
            header("Location: PlazaAgregar.php?failure");
@@ -137,7 +134,7 @@ if(isset($_GET['inserted']))
     ?>
     <div class="container">
         <div class="alert alert-info">
-            <strong>WOW!</strong> Record was inserted successfully <a href="PlazaAgregar.php">HOME</a>!
+            <strong>WOW!</strong> Record was inserted successfully <a href="Plaza.php">HOME</a>!
         </div>
     </div>
     <?php
