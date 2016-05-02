@@ -226,14 +226,24 @@ class AlmacenModelo{
     }
 
     public function getAlmacenByID($id_cliente,$id_plaza,$id_almacen){
-        if ($stmt = $this->conn->prepare("SELECT * FROM almacen WHERE id_cliente =? AND id_plaza =? AND id_almacen =?")) {
+        $query="SELECT * FROM almacen WHERE id_cliente =$id_cliente AND id_plaza =$id_plaza AND id_almacen =$id_almacen";
+        $result = mysql_query($query);
+        $row = mysql_fetch_assoc($result);
+        return $row;
 
-            /* ligar par?metros para marcadores */
+        
+
+        /*
+
+
+        if ($stmt = $this->conn->prepare("SELECT * FROM almacen WHERE id_cliente ='id_cliente' AND id_plaza ='id_plaza' AND id_almacen ='id_almacen'")) {
+
+            // ligar par?metros para marcadores 
             if(!$stmt->bind_param("iii",$id_cliente,$id_plaza,$id_almacen)){
                 return false;
             }
 
-            /* ejecutar la consulta */
+            //ejecutar la consulta 
             if(!$stmt->execute()){
                 return false;
             }
@@ -241,12 +251,12 @@ class AlmacenModelo{
             $result = $stmt->get_result();
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
-            /* cerrar sentencia */
+            cerrar sentencia 
             $stmt->close();
             return $row;
         }else{
             return false;
-        }
+        }*/
     }
     public function getAllByIDCliente(){
         if ($stmt = $this->conn->prepare("select *  from cliente")) {
