@@ -86,7 +86,7 @@ class ClienteModelo
             if($current_page!=1)
             {
                 $previous =$current_page-1;
-                echo "<li><a href='".$self."?page_no=1'>First</a></li>";
+                echo "<li><a href='".$self."?page_no=1'>Primera</a></li>";
                 echo "<li><a href='".$self."?page_no=".$previous."'>Anterior</a></li>";
             }
             for($i=1;$i<=$total_no_of_pages;$i++)

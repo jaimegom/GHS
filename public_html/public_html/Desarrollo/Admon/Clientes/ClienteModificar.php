@@ -15,7 +15,7 @@ if(isset($_POST['btn-update']))
 				</div>";
     }else{
         $msg = "<div class='alert alert-warning'>
-				<strong>SORRY!</strong> ERROR while updating record !
+				<strong>SORRY!</strong> ERROR mientas se modificaba el cliente !
 				</div>";
     }
 }

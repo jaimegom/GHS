@@ -104,7 +104,6 @@ include_once 'ClienteControlador.php';
 
 </html>
 <?php
-
 if(isset($_POST['btn-save']))
 {
     if($_POST['nombreCliente']&& $_POST['correoElectronico']&& $_POST['Telefono']&&$_POST['Direccion'] ){
@@ -130,7 +129,6 @@ if(isset($_POST['btn-save']))
 }
 
 ?>
-
 <?php
 if(isset($_GET['inserted']))
 {
@@ -147,7 +145,7 @@ else if(isset($_GET['failure']))
     ?>
     <div class="container">
         <div class="alert alert-warning">
-            <strong>SORRY!</strong> ERROR mientras se insertaba!
+            ERROR mientras se insertaba!
         </div>
     </div>
     <?php
