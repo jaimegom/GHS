@@ -178,68 +178,16 @@ class AlmacenModelo{
     }
 
     public function getByIDCliente($id_cliente){
-        if ($stmt = $this->conn->prepare("select id_cliente,nombre_cliente,correo_electronico,telefono,direccion  from cliente where id_cliente = ?")) {
-
-            /* ligar par?metros para marcadores */
-            if(!$stmt->bind_param("i",$id_cliente)){
-                return false;
-            }
-
-            /* ejecutar la consulta */
-            if(!$stmt->execute()){
-                return false;
-            }
-
-            $result = $stmt->get_result();
-            $row = $result->fetch_array(MYSQLI_ASSOC);
-
-            /* cerrar sentencia */
-            $stmt->close();
-            return $row;
-        }else{
-            return false;
-        }
-    }
-
-    public function getPlazaByID($id_plaza){
-        if ($stmt = $this->conn->prepare("select *  from plaza where id_plaza = ?")) {
-
-            /* ligar par?metros para marcadores */
-            if(!$stmt->bind_param("i",$id_plaza)){
-                return false;
-            }
-
-            /* ejecutar la consulta */
-            if(!$stmt->execute()){
-                return false;
-            }
-
-            $result = $stmt->get_result();
-            $row = $result->fetch_array(MYSQLI_ASSOC);
-
-            /* cerrar sentencia */
-            $stmt->close();
-            return $row;
-        }else{
-            return false;
-        }
-    }
-
-    public function getAlmacenByID($id_cliente,$id_plaza,$id_almacen){
-        $query="SELECT * FROM almacen WHERE id_cliente =$id_cliente AND id_plaza =$id_plaza AND id_almacen =$id_almacen";
-        $result = mysql_query($query);
-        $row = mysql_fetch_assoc($result);
+            $query="select *  from cliente where id_cliente = $id_cliente";
+         $stmt = $this->conn->query($query);
+        $row=$stmt->fetch_array(MYSQLI_ASSOC);
+      //  $row = mysql_fetch_assoc($result);
         return $row;
-
-        
-
         /*
-
-
-        if ($stmt = $this->conn->prepare("SELECT * FROM almacen WHERE id_cliente ='id_cliente' AND id_plaza ='id_plaza' AND id_almacen ='id_almacen'")) {
+        if ($stmt = $this->conn->prepare("select *  from cliente where id_cliente = ?")) {
 
             // ligar par?metros para marcadores 
-            if(!$stmt->bind_param("iii",$id_cliente,$id_plaza,$id_almacen)){
+            if(!$stmt->bind_param("i",$id_cliente)){
                 return false;
             }
 
@@ -251,6 +199,63 @@ class AlmacenModelo{
             $result = $stmt->get_result();
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
+            // cerrar sentencia 
+            $stmt->close();
+            return $row;
+        }else{
+            return false;
+        }*/
+    }
+
+    public function getPlazaByID($id_plaza){
+                  $query="select *  from plaza where id_plaza = $id_plaza";
+         $stmt = $this->conn->query($query);
+        $row=$stmt->fetch_array(MYSQLI_ASSOC);
+      //  $row = mysql_fetch_assoc($result);
+        return $row;
+        /*
+        if ($stmt = $this->conn->prepare("select *  from plaza where id_plaza = ?")) {
+
+            // ligar par?metros para marcadores 
+            if(!$stmt->bind_param("i",$id_plaza)){
+                return false;
+            }
+
+            //ejecutar la consulta 
+            if(!$stmt->execute()){
+                return false;
+            }
+
+            $result = $stmt->get_result();
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+
+            //cerrar sentencia 
+            $stmt->close();
+            return $row;
+        }else{
+            return false;
+        }*/
+    }
+
+
+    public function getAlmacenByID($id_cliente,$id_plaza,$id_almacen){
+        $query="SELECT * FROM almacen WHERE id_cliente =$id_cliente AND id_plaza =$id_plaza AND id_almacen =$id_almacen";
+         $stmt = $this->conn->query($query);
+        $row=$stmt->fetch_array(MYSQLI_ASSOC);
+      //  $row = mysql_fetch_assoc($result);
+        return $row;
+        /*
+        if ($stmt = $this->conn->prepare("SELECT * FROM almacen WHERE id_cliente ='id_cliente' AND id_plaza ='id_plaza' AND id_almacen ='id_almacen'")) {
+            // ligar par?metros para marcadores 
+            if(!$stmt->bind_param("iii",$id_cliente,$id_plaza,$id_almacen)){
+                return false;
+            }
+            //ejecutar la consulta 
+            if(!$stmt->execute()){
+                return false;
+            }
+            $result = $stmt->get_result();
+            $row = $result->fetch_array(MYSQLI_ASSOC);
             cerrar sentencia 
             $stmt->close();
             return $row;
@@ -258,49 +263,31 @@ class AlmacenModelo{
             return false;
         }*/
     }
+
     public function getAllByIDCliente(){
-        if ($stmt = $this->conn->prepare("select *  from cliente")) {
+        
+        
+            $query="select *  from cliente ";
+         $stmt = $this->conn->query($query);
 
-
-            if(!$stmt->execute()){
-                return false;
-            }
-
-            $result = $stmt->get_result();
-            //$row = $result->fetch_array(MYSQLI_ASSOC);
-
-            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+        while ($row=$stmt->fetch_array(MYSQLI_ASSOC)) {
                 echo '<option class="form-control" name = "id_cliente" id = "id_cliente" required value="'. $row["id_cliente"].'" >'.$row["nombre_cliente"].'</option>';
             }
 
             $stmt->close();
             return $row;
-        }else{
-            return false;
-        }
+
     }
     public function getAllByIDPlaza($id_cliente){
-        if ($stmt = $this->conn->prepare("select *  from plaza where id_cliente = ?")) {
-            if(!$stmt->bind_param("i",$id_cliente)){
-                return false;
-            }
+  query = "select *  from plaza where id_cliente = $id_cliente";
+                $stmt = $this->conn->query($query);
 
-            if(!$stmt->execute()){
-                return false;
-            }
-
-            $result = $stmt->get_result();
-            //$row = $result->fetch_array(MYSQLI_ASSOC);
-
-            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+            while ($row=$stmt->fetch_array(MYSQLI_ASSOC)) {
                 echo '<option class="form-control" required value="'. $row["id_plaza"].'" >'.$row["nombre_plaza"].'</option>';
             }
 
             $stmt->close();
             return $row;
-        }else{
-            return false;
-        }
     }
 
 
