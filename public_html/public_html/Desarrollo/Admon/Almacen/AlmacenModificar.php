@@ -126,7 +126,7 @@ if(isset($_GET['edit_id']) &&isset($_GET['edit_id_plaza'])&&isset($_GET['edit_id
 
             <tr>
                 <td>Capacidad</td>
-                <td><input type='text' name='capacidad' class='form-control' value="<?php echo $capacidad; ?>" required></td>
+                <td><input type='text' name='capacidad' class='form-control' onkeypress='validate(event)' value="<?php echo $capacidad; ?>" required></td>
             </tr>
 
             <tr>
@@ -136,7 +136,7 @@ if(isset($_GET['edit_id']) &&isset($_GET['edit_id_plaza'])&&isset($_GET['edit_id
 
             <tr>
                 <td>Precision</td>
-                <td><input type='text' name='precision' class='form-control' value="<?php echo $precision; ?>" required></td>
+                <td><input type='text' name='precision' class='form-control' onkeypress='validate(event)' value="<?php echo $precision; ?>" required></td>
             </tr>
 
             <tr>
@@ -146,22 +146,22 @@ if(isset($_GET['edit_id']) &&isset($_GET['edit_id_plaza'])&&isset($_GET['edit_id
 
             <tr>
                 <td>Factor</td>
-                <td><input type='text' name='factor' class='form-control' value="<?php echo $factor; ?>" required></td>
+                <td><input type='text' name='factor' class='form-control' onkeypress='validate(event)' value="<?php echo $factor; ?>" required></td>
             </tr>
 
             <tr>
                 <td>Activar Unidad de Medida 2</td>
-                <td><input type='text' name='act' class='form-control' value="<?php echo $act; ?>" required></td>
+                <td><input type='text' name='act' class='form-control' value="<?php echo $act; ?>" ></td>
             </tr>
 
             <tr>
                 <td>Unidad de Medida 2</td>
-                <td><input type='text' name='um2' class='form-control' value="<?php echo $um2; ?>" required></td>
+                <td><input type='text' name='um2' class='form-control' value="<?php echo $um2; ?>" ></td>
             </tr>
 
             <tr>
                 <td>Factor UM 2</td>
-                <td><input type='text' name='factor2' class='form-control' value="<?php echo $facto2; ?>" required></td>
+                <td><input type='text' name='factor2' class='form-control' onkeypress='validate(event)' value="<?php echo $facto2; ?>" required></td>
             </tr>
 
             <tr>
@@ -179,7 +179,18 @@ if(isset($_GET['edit_id']) &&isset($_GET['edit_id_plaza'])&&isset($_GET['edit_id
 
 </div>
 
-
+<script type = "text/javascript">
+    function validate(evt) {
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode( key );
+        var regex = /[0-9]|\./;
+        if( !regex.test(key) ) {
+            theEvent.returnValue = false;
+            if(theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+</script>
 
 <!-- Javascript -->
 <script src="../assets/js/jquery-1.11.1.min.js"></script>

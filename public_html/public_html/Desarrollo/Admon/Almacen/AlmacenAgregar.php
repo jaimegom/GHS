@@ -94,17 +94,17 @@ include_once 'AlmacenControlador.php';
 
             <tr>
                 <td>Capacidad</td>
-                <td><input type='text' name='capacidad' class='form-control' required></td>
+                <td><input type='text' name='capacidad' class='form-control' required onkeypress='validate(event)'></td>
             </tr>
 
             <tr>
                 <td>Tipo</td>
-                <td><input type='text' name='tipo' class='form-control' required></td>
+                <td><input type='text' name='tipo' class='form-control' required ></td>
             </tr>
 
             <tr>
                 <td>Precision</td>
-                <td><input type='text' name='precision' class='form-control' required></td>
+                <td><input type='text' name='precision' class='form-control' required onkeypress='validate(event)'></td>
             </tr>
 
             <tr>
@@ -114,22 +114,22 @@ include_once 'AlmacenControlador.php';
 
             <tr>
                 <td>Factor</td>
-                <td><input type='text' name='factor' class='form-control' required></td>
+                <td><input type='text' name='factor' class='form-control' requiredonkeypress='validate(event)'></td>
             </tr>
 
             <tr>
                 <td>Activar Unidad de Medida 2</td>
-                <td><input type='text' name='act' class='form-control' required></td>
+                <td><input type='text' name='act' class='form-control' ></td>
             </tr>
 
             <tr>
                 <td>Unidad de Medida 2</td>
-                <td><input type='text' name='um2' class='form-control' required></td>
+                <td><input type='text' name='um2' class='form-control' ></td>
             </tr>
 
             <tr>
                 <td>Factor UM 2</td>
-                <td><input type='text' name='factor2' class='form-control' required></td>
+                <td><input type='text' name='factor2' class='form-control' onkeypress='validate(event)'></td>
             </tr>
 
             <tr>
@@ -146,7 +146,18 @@ include_once 'AlmacenControlador.php';
 
 
 </div>
-
+<script type = "text/javascript">
+    function validate(evt) {
+        var theEvent = evt || window.event;
+        var key = theEvent.keyCode || theEvent.which;
+        key = String.fromCharCode( key );
+        var regex = /[0-9]|\./;
+        if( !regex.test(key) ) {
+            theEvent.returnValue = false;
+            if(theEvent.preventDefault) theEvent.preventDefault();
+        }
+    }
+</script>
 
 <!-- Javascript -->
 <script src="../assets/js/jquery-1.11.1.min.js"></script>
