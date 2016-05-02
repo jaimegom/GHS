@@ -1,10 +1,12 @@
 <?php
 require_once "../init.php";
+
+
 class PlazaModelo
 {
-    private $conn;
-
-    function __construct()
+private $conn;
+ 
+      function __construct()
     {
         $this->conn = new mysqli('localhost', 'root', '', 'DB_Desarrollo');
         if ($this->conn->connect_error) {
@@ -222,9 +224,44 @@ public function deletePlazaByID($id_plaza,$id_cliente){
     }
 
 
+//Llenar el combobox
+public function LlenarComboCliente2($add){
+
+
+  if ($stmt = $this->conn->prepare("Select nombre_cliente,id_cliente from cliente ")) {
+
+
+             
+
+
+            /* ejecutar la consulta */
+            if(!$stmt->execute()){
+                return false;
+            }
+
+           
+           
+            $result = $stmt->get_result();
+            $row = $result->fetch_array(MYSQLI_ASSOC);
+
+            //$stmt->bind_result( $nombre_Plaza, $correo_electronico, $telefono, $direccion);
+            //$result = $stmt->fetch();
+            /* cerrar sentencia */
+            $stmt->close();
+            return $row;
+        }else{
+            return false;
+        }
+
+}
+
+
 
 
 
 }
+
+
+
 
 ?>

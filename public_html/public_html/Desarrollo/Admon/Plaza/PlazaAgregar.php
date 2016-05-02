@@ -2,6 +2,13 @@
 
 require_once "../init.php";
 include_once 'PlazaControlador.php';
+$row;
+$Add = 1;
+$rowPlaza = LlenarComboCliente($Add);
+
+
+
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,11 +73,23 @@ include_once 'PlazaControlador.php';
 
            
 
-            <tr>
-                <td>Cliente</td>
-                <td><input type='text' name='Cliente' class='form-control' required></td>
-            </tr>
+            
 
+<tr>
+
+    <td>Cliente </td>
+          <td>  
+
+            <SELECT name='Cliente' class='form-control'> 
+
+<?php foreach ($rowPlaza as $row) {
+        echo '<option value="'.$rowPlaza['id_cliente'].'">'.$rowPlaza['nombre_cliente'].'</option>';
+    }?>
+
+            </SELECT>
+
+          </td>
+</tr>
             <tr>
                 <td colspan="2">
                     <button type="submit" class="btn btn-primary" name="btn-save">

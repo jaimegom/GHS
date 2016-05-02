@@ -82,5 +82,20 @@ function deletePlazaByID($id_plaza,$id_cliente){
 
 
 
+function LlenarComboCliente($add){
+    $PlazaModelo = new PlazaModelo();
+  $array = $PlazaModelo->LlenarComboCliente2($add);
+
+ 
+
+if(count($array)>0){
+        return $array;//regresar error
+    }else{
+        return false;
+    }
+
+}
+
+
 
 ?>
