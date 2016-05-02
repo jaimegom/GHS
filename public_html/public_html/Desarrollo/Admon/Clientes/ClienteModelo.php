@@ -162,15 +162,21 @@ class ClienteModelo
         }
     }
 
-    public function getByIDCliente($id_cliente){
+  public function getByIDCliente($id_cliente){
+        $query="select *  from cliente where id_cliente = $id_cliente";
+         $stmt = $this->conn->query($query);
+        $row=$stmt->fetch_array(MYSQLI_ASSOC);
+      //  $row = mysql_fetch_assoc($result);
+        return $row;
+        /*
         if ($stmt = $this->conn->prepare("select id_cliente,nombre_cliente,correo_electronico,telefono,direccion  from cliente where id_cliente = ?")) {
 
-            /* ligar par?metros para marcadores */
+            // ligar par?metros para marcadores 
             if(!$stmt->bind_param("i",$id_cliente)){
                 return false;
             }
 
-            /* ejecutar la consulta */
+            // ejecutar la consulta 
             if(!$stmt->execute()){
                 return false;
             }
@@ -178,12 +184,12 @@ class ClienteModelo
             $result = $stmt->get_result();
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
-            /* cerrar sentencia */
+            //cerrar sentencia 
             $stmt->close();
             return $row;
         }else{
             return false;
-        }
+        }*/
     }
 
     public function deleteClienteByID($id_cliente){
